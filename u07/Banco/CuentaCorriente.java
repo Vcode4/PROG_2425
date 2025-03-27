@@ -1,5 +1,6 @@
-package unidad07_A01;
+package unidad07_A02;
 
+import unidad07_A01.*;
 import java.util.*;
 
 /**
@@ -8,31 +9,40 @@ import java.util.*;
  */
 
 /**
- 1. Diseñar la clase CuentaCorriente, que almacena los datos: DNI y nombre del titular, así como el
-saldo. Las operaciones típicas con una cuenta corriente son:
+ EJERCICIO 2. En la clase CuentaCorriente sobrecargar los constructores para poder crear objetos.
 
-• Crear una cuenta: se necesita el DNI y nombre del titular. EI saldo inicial será 0.
-• Sacar dinero: el método debe indicar si ha sido posible llevar a cabo la operación, si existe saldo
-suficiente.
-• Ingresar dinero: se incrementa el saldo.
-• Mostrar información: muestra la información disponible de la cuenta corriente.
+• Con el DNI del titular de la cuenta y un saldo inicial.
+• Con el DNI, nombre y el saldo inicial.
 
-NOTA: Crear una clase Main.java de donde se cree y maneje el objeto de tipo CuentaCorriente.
+Escribir un programa que compruebe el funcionamiento de los métodos.
+
+NOTA: realizar una versión utilizando this().
  */
 public class CuentaCorriente {  
           
-       String nombreTitular, dni;
+       String nombreTitular;
        Double saldoCuenta;
+       String dni;
        
        public CuentaCorriente(String nombreTitular,String dni ){
         this.dni = dni;
         this.nombreTitular = nombreTitular;
         this.saldoCuenta = 0.0;
     }
+       public CuentaCorriente(String dni,double saldoInicial){
+           this(dni,"");
+           this.saldoCuenta = saldoInicial;
+       }
+       
+       public CuentaCorriente(String dni, String nombreTitular, double saldoInicial){
+           this(dni, "");
+           this.nombreTitular = nombreTitular;
+           this.saldoCuenta = saldoInicial;
+       }
        public void ingresarDinero(double cantidad){
            if(cantidad > 0){
                saldoCuenta = saldoCuenta +cantidad;
-               System.out.println("El ingreso ha sido de "+ cantidad + " €"+".El saldo actual es de : "+ saldoCuenta );
+               System.out.println("El ingreso ha sido de "+ cantidad + " €"+".El saldo actual es de: "+ saldoCuenta );
            }else{
                System.out.println("No puede ingresar una cantidad menor de 0.");
            }
@@ -45,7 +55,7 @@ public class CuentaCorriente {
                System.out.println("No se puede retirar "+cantidad+" €"+".Saldo insuficiente");  
            }else{
                 saldoCuenta = saldoCuenta - cantidad;
-                System.out.println("Se ha retirado"+cantidad+" €"+".El saldo actual es de "+saldoCuenta);
+                System.out.println("Se ha retirado "+cantidad+" €"+".El saldo actual es de: "+saldoCuenta);
                 operacionExito=true;
             }
            return operacionExito;
