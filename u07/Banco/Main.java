@@ -1,25 +1,30 @@
 
-package unidad07_A01;
+package unidad07_A02;
+import unidad07_A01.*;
 import java.util.*;
 /**
  *
  * @author VIRGINIA DEL MORAL SÁNCHEZ
  */
+
 public class Main {
     public static void main(String[]args){
         
-        CuentaCorriente cuenta1 = new CuentaCorriente("03147867J","Paco");
-        CuentaCorriente cuenta2 = new CuentaCorriente("76352493A","Juan");
+        //Creación cuenta con DNI y saldo inicial
+        CuentaCorriente cuenta1 = new CuentaCorriente("03147867J",200);
         
-        System.out.println("\nLa información es:");
+        //Creacion cuenta con DNI, nombre y saldo inicial
+        CuentaCorriente cuenta2 = new CuentaCorriente("76352493A","Juan", 1200);
+        
+        System.out.println("\nLa información es: ");
         cuenta1.mostrarInfo();
         cuenta2.mostrarInfo();
         
-        System.out.println("\nINGRESO DE DINERO");
+        System.out.println("\nINGRESO DE DINERO: ");
         cuenta1.ingresarDinero(1000);
         cuenta2.ingresarDinero(200);
         
-        System.out.println("\nSACAR DINERO");
+        System.out.println("\nSACAR DINERO: ");
         cuenta1.sacarDinero(350);
         cuenta2.sacarDinero(0);
            
