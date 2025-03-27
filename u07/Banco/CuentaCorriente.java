@@ -1,6 +1,7 @@
-package unidad07_A02;
 
-import unidad07_A01.*;
+package unidad07_A03;
+
+import unidad07_A03.*;
 import java.util.*;
 
 /**
@@ -9,19 +10,20 @@ import java.util.*;
  */
 
 /**
- EJERCICIO 2. En la clase CuentaCorriente sobrecargar los constructores para poder crear objetos.
+EJERCICIO 3. Modificar la visibilidad de la clase Cuentacorriente para que sea visible desde clases
+externas y la visibilidad de sus atributos para que:
 
-• Con el DNI del titular de la cuenta y un saldo inicial.
-• Con el DNI, nombre y el saldo inicial.
+• saldo no sea visible para otras clases.
+• nombre sea público para cualquier clase.
+• dni solo sea visible por clases vecinas.
 
-Escribir un programa que compruebe el funcionamiento de los métodos.
-
-NOTA: realizar una versión utilizando this().
+Realizar un programa para comprobar la visibilidad de los atributos.
  */
-public class CuentaCorriente {  
-          
-       String nombreTitular;
-       Double saldoCuenta;
+public class CuentaCorriente {
+ 
+    /*Este es el añadido de la actividad 3*/
+       public String nombreTitular;
+       private Double saldoCuenta;
        String dni;
        
        public CuentaCorriente(String nombreTitular,String dni ){

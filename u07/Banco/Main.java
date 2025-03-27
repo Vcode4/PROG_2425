@@ -1,6 +1,7 @@
 
-package unidad07_A02;
-import unidad07_A01.*;
+package unidad07_A03;
+
+import unidad07_A03.*;
 import java.util.*;
 /**
  *
@@ -8,17 +9,16 @@ import java.util.*;
  */
 
 /**
-EJERCICIO 2
+EJERCICIO 3
  */
-
 public class Main {
-    public static void main(String[]args){
+     public static void main(String[]args){
         
         //Creación cuenta con DNI y saldo inicial
-        CuentaCorriente cuenta1 = new CuentaCorriente("03147867J",200);
+        unidad07_A02.CuentaCorriente cuenta1 = new unidad07_A02.CuentaCorriente("03147867J",200);
         
         //Creacion cuenta con DNI, nombre y saldo inicial
-        CuentaCorriente cuenta2 = new CuentaCorriente("76352493A","Juan", 1200);
+        unidad07_A02.CuentaCorriente cuenta2 = new unidad07_A02.CuentaCorriente("76352493A","Juan", 1200);
         
         System.out.println("\nLa información es: ");
         cuenta1.mostrarInfo();
@@ -34,3 +34,4 @@ public class Main {
            
     }  
 }
+
