@@ -1,16 +1,18 @@
-package unidad07_A02;
 
-import unidad07_A01.*;
+package unidad07_A03;
+
+import unidad07_A03.*;
 import java.util.*;
 
 /**
  *
  * @author VIRGINIA DEL MORAL SÁNCHEZ
  */
-public class CuentaCorriente {  
-          
-       String nombreTitular;
-       Double saldoCuenta;
+public class CuentaCorriente {
+ 
+    /*Este es el añadido de la actividad 3*/
+       public String nombreTitular;
+       private Double saldoCuenta;
        String dni;
        
        public CuentaCorriente(String nombreTitular,String dni ){
