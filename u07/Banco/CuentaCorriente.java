@@ -1,7 +1,7 @@
 
-package unidad07_A03;
+package unidad07_A04;
 
-import unidad07_A03.*;
+import unidad07_A04.*;
 import java.util.*;
 
 /**
@@ -10,18 +10,17 @@ import java.util.*;
  */
 
 /**
-EJERCICIO 3. Modificar la visibilidad de la clase Cuentacorriente para que sea visible desde clases
-externas y la visibilidad de sus atributos para que:
+EJERCICIO 4. Todas las cuentas corrientes con las que se va a trabajar pertenecen al mismo banco.
 
-• saldo no sea visible para otras clases.
-• nombre sea público para cualquier clase.
-• dni solo sea visible por clases vecinas.
+• Añadir un atributo que almacene el nombre del banco (que es único) en la clase
+CuentaCorriente.
 
-Realizar un programa para comprobar la visibilidad de los atributos.
+• Diseñar un método que permita recuperar y modificar el nombre del banco (al que
+pertenecen todas las cuentas corrientes).
  */
 public class CuentaCorriente {
  
-    /*Este es el añadido de la actividad 3*/
+       private static String nombre_Banco;
        public String nombreTitular;
        private Double saldoCuenta;
        String dni;
@@ -67,6 +66,14 @@ public class CuentaCorriente {
            System.out.println("Nombre del Titular: "+ nombreTitular);
            System.out.println("Su DNI es: "+dni);
            System.out.println("Saldo es de: "+ saldoCuenta + " €");
+       }
+       
+       //METODOS GET Y SET PARA ACCEDER Y MODIFICAR EL NOMBRE DEL BANCO
+       public static String getNombreBanco(){
+            return nombre_Banco;                  
+        }
+       public static void setNombreBanco(String nombre_Banco){
+           CuentaCorriente.nombre_Banco=nombre_Banco;
        }
     }
 

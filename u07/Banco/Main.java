@@ -1,7 +1,7 @@
 
-package unidad07_A03;
+package unidad07_A04;
 
-import unidad07_A03.*;
+import unidad07_A04.*;
 import java.util.*;
 /**
  *
@@ -9,10 +9,12 @@ import java.util.*;
  */
 
 /**
-EJERCICIO 3
+EJERCICIO 4
  */
 public class Main {
      public static void main(String[]args){
+        
+        CuentaCorriente.setNombreBanco("BBVA");
         
         //Creación cuenta con DNI y saldo inicial
         unidad07_A02.CuentaCorriente cuenta1 = new unidad07_A02.CuentaCorriente("03147867J",200);
