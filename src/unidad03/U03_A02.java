@@ -1,5 +1,5 @@
 //REALIZADO POR: VIRGINIA DEL MORAL SÁNCHEZ
-package unidad3;
+package unidad03;
 
 import java.util.Scanner;
         

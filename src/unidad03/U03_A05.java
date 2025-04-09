@@ -1,6 +1,6 @@
 //REALIZADO POR: VIRGINIA DEL MORAL SÁNCHEZ
 
-package unidad3;
+package unidad03;
 
 /*EI tipo short permite almacenar valores comprendidos entre -32.768 y 32.767. 
 Escribir un programa que compruebe que el rango de valores de un tipo se 

@@ -1,6 +1,6 @@
 //REALIZADO POR: VIRGINIA DEL MORAL SÁNCHEZ
 
-package unidad3;
+package unidad03;
 
 /*Escribir una aplicación que pida el año actual y el de nacimiento del usuario. 
 Debe calcular su edad, suponiendo que en el año en curso el usuario ya ha cumplido años.*/

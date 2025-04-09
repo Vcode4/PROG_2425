@@ -1,6 +1,6 @@
 //REALIZADO POR: VIRGINIA DEL MORAL Sï¿½NCHEZ
 
-package unidad3;
+package unidad03;
 
 //Pedir al usuario su edad y mostrar la que tendria el próximo año
 
